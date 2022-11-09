@@ -44,6 +44,14 @@ body {
     }
 }
 
+
+/* @media only screen and (max-width: 550px) {
+    .root {
+        font-size: 0.8em;
+    }
+} */
+
+
 header {
     font-weight: 400;
     font-size: 1.3em;
@@ -114,8 +122,4 @@ button:hover {
     button:hover {
         transform: scale(300%);
     }
-}
-
-#encrypt {
-    font-family: monospace;
 }
