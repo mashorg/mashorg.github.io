@@ -50,14 +50,6 @@ body {
     }
 }
 
-
-/* @media only screen and (max-width: 550px) {
-    .root {
-        font-size: 0.8em;
-    }
-} */
-
-
 header {
     font-weight: 400;
     font-size: 1.3em;
@@ -96,7 +88,7 @@ li::marker {
     align-items: center;
 }
 
-input[type=email], textarea {
+input[type=email] {
     outline: none;
     border: none;
     font: inherit;
