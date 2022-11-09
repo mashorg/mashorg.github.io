@@ -17,9 +17,16 @@ body {
     font-size: 1.3rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     body {
         font-size: 0.8rem;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    body {
+        font-size: 0.6rem;
     }
 }
 
@@ -36,7 +43,7 @@ body {
 }
 
 .work-logo {
-    width: 25rem;
+    width: 25em;
     margin: auto;
     display: block;
     margin-bottom: 4em;
@@ -110,9 +117,11 @@ button {
     font-weight: 700;
     letter-spacing: .1em;
     border-radius: 4px;
+    transition: transform 1s ease-in;
 }
 
 button:hover {
     border: 2px solid #27d173;
     color: #27d173;
+    transform: scale(300%);
 }
