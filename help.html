@@ -26,19 +26,19 @@
         </p>
 
         <ul class="features">
-            <li data-icon="🗿">
+            <li data-icon="🗿" class="randIcon">
                 Like google calendar but surveillance-resistant.
             </li>
-            <li data-icon="⛔">
+            <li data-icon="⛔" class="randIcon">
                 No accounts, no emails, minimal metadata.
             </li>
-            <li data-icon="✊">
+            <li data-icon="✊" class="randIcon">
                 Useful for organising all sorts of things...
             </li>
-            <li data-icon="🌱">
+            <li data-icon="🌱" class="randIcon">
                 Potential to grow into a powerful organising platform
             </li>
-            <li data-icon="🧠">
+            <li data-icon="🧠" class="randIcon">
                 A bit of practical coding practice?
             </li>
         </ul>
@@ -75,12 +75,30 @@
         </form>
     </div>
     <script>
+        const randTargets = Array.from(document.getElementsByClassName("randIcon"));
+        const origIcons = randTargets.map(t => t.getAttribute("data-icon"));
+        const startTime = Date.now();
+        const delay = 500;
+        const randomiseIcons = () => {
+            const d = Date.now() - startTime;
+            for(let i=0;i<randTargets.length;i++) {
+                if(d > (i+1) * delay) {
+                    randTargets[i].setAttribute("data-icon", origIcons[i]);
+                } else {
+                    randTargets[i].setAttribute("data-icon", String.fromCharCode(0x30A0 + Math.random() * (0x30FF - 0x30A0 + 1)));
+                }
+            }
+        }
+            // Array.from(document.getElementsByClassName("randIcon"))
+            //     .forEach(e =>
+            //         e.setAttribute("data-icon", String.fromCharCode(0x30A0 + Math.random() * (0x30FF - 0x30A0 + 1))));
+
         // const randomiseIcons = () =>
         //     Array.from(document.getElementsByClassName("randIcon"))
         //         .forEach(e =>
         //             e.setAttribute("data-icon", String.fromCharCode(0x30A0 + Math.random() * (0x30FF - 0x30A0 + 1))));
-        // randomiseIcons();
-        // window.setInterval(randomiseIcons, 130);
+        randomiseIcons();
+        window.setInterval(randomiseIcons, 100);
     </script>
 
 </body>

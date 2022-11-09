@@ -78,15 +78,10 @@ ul.skills {
     grid-template-columns: 1fr 1fr;
 }
 
-/* ul {
-    list-style-type: none;
-} */
-
 li::marker {
     color: #dddddd;
     font-weight: bold;
     content: attr(data-icon) '   ';
-    /* padding-right: 2rem; */
 }
 
 .contact-form {
@@ -99,8 +94,6 @@ li::marker {
 input[type=email], textarea {
     outline: none;
     border: none;
-    /* font-family: inherit;
-    font-size: inherit; */
     font: inherit;
     padding: 0;
 }
