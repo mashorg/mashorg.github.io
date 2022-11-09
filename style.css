@@ -13,6 +13,12 @@ body {
     font-size: 1.3rem;
 }
 
+.home {
+    display: grid;
+    align-items: middle;
+    height: 100%;
+}
+
 .root {
     margin: auto;
     width: 33em;
