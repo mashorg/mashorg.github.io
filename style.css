@@ -17,19 +17,6 @@ body {
     font-size: 1.3rem;
 }
 
-@media only screen and (max-width: 800px) {
-    body {
-        font-size: 0.8rem;
-    }
-}
-
-
-@media only screen and (max-width: 550px) {
-    body {
-        font-size: 0.6rem;
-    }
-}
-
 .root {
     margin: auto;
     width: 33em;
@@ -48,6 +35,24 @@ body {
     display: block;
     margin-bottom: 4em;
 }
+
+@media only screen and (max-width: 800px) {
+    .root {
+        width: 80vw;
+        font-size: 0.8em;
+    }
+    .work-logo {
+        width: 60vw;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    .root {
+        font-size: 0.6em;
+    }
+}
+
 
 header {
     font-weight: 400;
