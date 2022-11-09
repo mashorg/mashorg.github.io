@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;800;900&display=swap');
+
+html {
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+    font-family: Merriweather;
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.root {
+    margin: auto;
+    width: 33em;
+    font-weight: 300;
+    padding: 3em 0;
+}
+
+.home-logo {
+    width: 30em;
+    margin: auto;
+}
+
+.work-logo {
+    width: 25rem;
+    margin: auto;
+    display: block;
+    margin-bottom: 4em;
+}
+
+header {
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+}
+
+.pad-bottom {
+    /* margin-bottom: 2em; */
+}
+
+ul {
+    font-weight: 500;
+    margin: 2em 0;
+}
+
+ul.features {
+    margin-left: 1.5em;
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 1fr;
+}
+
+ul.skills {
+    margin-left: 1.5em;
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ul {
+    list-style-type: none;
+} */
+
+li::marker {
+    font-family: Simple Icons;
+    color: #dddddd;
+    font-weight: bold;
+    content: attr(data-icon) '  ';
+    /* padding-right: 2rem; */
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.4em;
+    align-items: center;
+}
+
+input[type=email], textarea {
+    outline: none;
+    border: none;
+    /* font-family: inherit;
+    font-size: inherit; */
+    font: inherit;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    border: 2px solid #21a35b;
+    color: #21a35b;
+    background-color: transparent;
+    outline: none;
+    padding: 0.6em;
+    font-family: Roboto;
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: .1em;
+    border-radius: 4px;
+}
+
+button:hover {
+    border: 2px solid #27d173;
+    color: #27d173;
+}
