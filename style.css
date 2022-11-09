@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap');
 
 html {
     width: 100%;
@@ -70,7 +70,6 @@ ul.skills {
 } */
 
 li::marker {
-    font-family: Simple Icons;
     color: #dddddd;
     font-weight: bold;
     content: attr(data-icon) '  ';
