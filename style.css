@@ -39,7 +39,8 @@ body {
 @media only screen and (max-width: 800px) {
     .root {
         width: 80vw;
-        font-size: 0.8em;
+        /* font-size: 1em; */
+        font-size: 3.5vw;
         padding: 1em 0;
     }
     .work-logo {
@@ -48,11 +49,11 @@ body {
 }
 
 
-@media only screen and (max-width: 550px) {
+/* @media only screen and (max-width: 550px) {
     .root {
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
-}
+} */
 
 
 header {
@@ -67,14 +68,14 @@ ul {
 }
 
 ul.features {
-    margin-left: 1.5em;
+    padding-left: 3em;
     display: grid;
     gap: 2.5em;
     grid-template-columns: 1fr;
 }
 
 ul.skills {
-    margin-left: 1.5em;
+    padding-left: 3em;
     display: grid;
     gap: 2.5em;
     grid-template-columns: 1fr 1fr;
