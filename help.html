@@ -21,7 +21,7 @@
 
         <p class="pad-bottom">
             The idea is a lightweight, ephemeral,
-            end&#x2011;to&#x2011;end encrypted app for calendar
+            <span id="encrypt">end&#x2011;to&#x2011;end encrypted</span> app for calendar
             collaboration.
         </p>
 
@@ -65,7 +65,7 @@
                 Repression
             </li>
         </ul>
-        <p class="subtitle">
+        <p>
             Then please get in touch:
         </p>
         <form action="https://forms.un-static.com/forms/85403e4e54509ba4cad33e7532645fe51801ca8c" method="post"
@@ -74,6 +74,22 @@
             <button type="submit">🚀 ENLIST</button>
         </form>
     </div>
+    <script>
+        const elem = document.getElementById("encrypt");
+        const init = elem.innerText;
+        String.prototype.replaceAt = function(index, replacement) {
+            return this.substring(0, index) + replacement + this.substring(index + replacement.length);
+        }
+        window.setInterval(() => {
+            let f = (Math.sin(Date.now()/600) + 1) / 2;
+            let out = init;
+            for(let i=0;i<f * init.length;i++){
+                out = out.replaceAt(Math.floor(Math.random() * init.length), String.fromCharCode(33 + Math.floor(Math.random() * 90)))
+            }
+            elem.innerText = out;
+        }, 20)
+    </script>
+
 
 </body>
 
