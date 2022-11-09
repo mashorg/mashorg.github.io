@@ -74,32 +74,6 @@
             <button type="submit">🚀 ENLIST</button>
         </form>
     </div>
-    <script>
-        const randTargets = Array.from(document.getElementsByClassName("randIcon"));
-        const origIcons = randTargets.map(t => t.getAttribute("data-icon"));
-        const startTime = Date.now();
-        const delay = 500;
-        const randomiseIcons = () => {
-            const d = Date.now() - startTime;
-            for(let i=0;i<randTargets.length;i++) {
-                if(d > (i+1) * delay) {
-                    randTargets[i].setAttribute("data-icon", origIcons[i]);
-                } else {
-                    randTargets[i].setAttribute("data-icon", String.fromCharCode(0x30A0 + Math.random() * (0x30FF - 0x30A0 + 1)));
-                }
-            }
-        }
-            // Array.from(document.getElementsByClassName("randIcon"))
-            //     .forEach(e =>
-            //         e.setAttribute("data-icon", String.fromCharCode(0x30A0 + Math.random() * (0x30FF - 0x30A0 + 1))));
-
-        // const randomiseIcons = () =>
-        //     Array.from(document.getElementsByClassName("randIcon"))
-        //         .forEach(e =>
-        //             e.setAttribute("data-icon", String.fromCharCode(0x30A0 + Math.random() * (0x30FF - 0x30A0 + 1))));
-        randomiseIcons();
-        window.setInterval(randomiseIcons, 100);
-    </script>
 
 </body>
 
