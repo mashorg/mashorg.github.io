@@ -34,7 +34,7 @@ body {
     margin: auto;
     width: 33em;
     font-weight: 300;
-    padding: 3em 0;
+    padding: 4em 0;
 }
 
 .home-logo {
@@ -55,13 +55,9 @@ header {
     margin-bottom: 1.5em;
 }
 
-.pad-bottom {
-    /* margin-bottom: 2em; */
-}
-
 ul {
     font-weight: 400;
-    margin: 2em 0;
+    margin: 2em 0 3em 0;
 }
 
 ul.features {
@@ -87,7 +83,7 @@ li::marker {
 .contact-form {
     display: grid;
     grid-template-columns: 1fr auto;
-    gap: 0.4em;
+    gap: 0.8em;
     align-items: center;
 }
 
@@ -95,14 +91,15 @@ input[type=email], textarea {
     outline: none;
     border: none;
     font: inherit;
-    padding: 0;
+    padding: 0.5em;
+    border-bottom: 2px solid lightgrey;
 }
 
 button {
     cursor: pointer;
     border: 2px solid #21a35b;
     color: #21a35b;
-    background-color: transparent;
+    background-color: white;
     outline: none;
     padding: 0.6em;
     font-family: Roboto;
