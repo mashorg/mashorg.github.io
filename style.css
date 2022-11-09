@@ -113,5 +113,10 @@ button {
 button:hover {
     border: 2px solid #27d173;
     color: #27d173;
-    transform: scale(300%);
+}
+
+@media only screen and (min-width: 800px) {
+    button:hover {
+        transform: scale(300%);
+    }
 }
