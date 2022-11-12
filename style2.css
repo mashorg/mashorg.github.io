@@ -4,22 +4,20 @@
 html {
     width: 100%;
     height: 100%;
-    --bg-color: #28a182;
-    --shadow-color: #1b7760;
-    --fg-color: white;
+
 }
 
 body {
     font-family: Merriweather;
     margin: 0;
     font-size: 1.3rem;
-    background-color: var(--bg-color);
 }
 
 .home {
     display: grid;
     align-items: middle;
     height: 100%;
+    background-color: #28a182;
 }
 
 .root {
@@ -27,7 +25,6 @@ body {
     width: 33em;
     font-weight: 300;
     padding: 4em 0;
-    color: var(--fg-color);
 }
 
 .home-logo {
@@ -41,7 +38,6 @@ body {
     margin: auto;
     display: block;
     margin-bottom: 4em;
-    filter: saturate(0%) brightness(1000%);
 }
 
 @media only screen and (max-width: 800px) {
@@ -69,7 +65,6 @@ p {
 ul {
     font-weight: 400;
     margin: 2em 0 3em 0;
-    list-style: none;
 }
 
 ul.features {
@@ -86,20 +81,10 @@ ul.skills {
     grid-template-columns: 1fr 1fr;
 }
 
-li {
-    position: relative;
-    margin-left: 1em;
-}
-
-li::before {
-    position: absolute;
+li::marker {
     color: #dddddd;
     font-weight: bold;
-    content: attr(data-icon);
-    left: -2em;
-    transform: scale(150%);
-    display: inline-block;
-    text-shadow: 0.1em 0.1em 0px var(--shadow-color);
+    content: attr(data-icon) '   ';
 }
 
 .contact-form {
@@ -114,17 +99,14 @@ input[type=email] {
     border: none;
     font: inherit;
     padding: 0.5em;
-    background-color: transparent;
-    color: var(--fg-color);
-    border-bottom: 2px solid var(--shadow-color);
-    font-weight: bold;;
+    border-bottom: 2px solid lightgrey;
 }
 
 button {
     cursor: pointer;
-    border: 2px solid var(--shadow-color);
-    color: var(--fg-color);
-    background-color: var(--bg-color);
+    border: 2px solid #21a35b;
+    color: #21a35b;
+    background-color: white;
     outline: none;
     padding: 0.6em;
     font-family: Roboto;
@@ -136,8 +118,8 @@ button {
 }
 
 button:hover {
-    border: 2px solid var(--fg-color);
-    /* color: var(); */
+    border: 2px solid #27d173;
+    color: #27d173;
 }
 
 @media only screen and (min-width: 800px) {
